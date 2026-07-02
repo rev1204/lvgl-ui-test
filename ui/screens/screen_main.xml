@@ -1,5 +1,48 @@
 <screen>
+	<styles>
+		<style name="style_scale_indicator" line_color="0xf00" line_width="3" />
+		<style name="style_scale_items" line_color="0xfff" />
+		<style name="style_arc_knob" bg_opa="0" />
+		<style name="style_arc_indicator" arc_rounded="false" arc_width="30" opa="80" />
+	</styles>
 	<view style_bg_color="0x000">
-		<lv_scale name="ui_scale_speedo" />
+		<lv_arc
+			align="bottom_mid"
+			rotation="180"
+			bg_start_angle="0"
+			bg_end_angle="180"
+			start_angle="0"
+			end_angle="180"
+			width="320"
+			height="320"
+			y="150"
+			min_value="0"
+			max_value="120"
+			value="60"
+			style_arc_width="0"
+			style_arc_rounded="false"
+		>
+			<style name="style_arc_knob" selector="knob" />
+			<style name="style_arc_indicator" selector="indicator" />
+			<lv_scale
+				width="320"
+				height="320"
+				total_tick_count="61"
+				major_tick_every="5"
+				style_text_color="0xfff"
+				style_arc_color="0xf00"
+				name="ui_scale_speed"
+				mode="round_inner"
+				min_value="0"
+				max_value="120"
+				angle_range="180"
+				rotation="180"
+			>
+				<style name="style_scale_indicator" selector="indicator" />
+				<style name="style_scale_items" selector="items" />
+			</lv_scale>
+			<lv_label text="00" style_text_color="0xfff" align="top_mid" y="70" />
+			<lv_label text="km/h" style_text_color="0xfff" align="top_mid" y="100" />
+		</lv_arc>
 	</view>
 </screen>
