@@ -3,7 +3,7 @@
 		<style name="style_scale_indicator" line_color="0xf00" line_width="3" />
 		<style name="style_scale_items" line_color="0xfff" />
 		<style name="style_arc_knob" bg_opa="0" />
-		<style name="style_arc_indicator" arc_rounded="false" arc_width="30" opa="80" />
+		<style name="style_arc_indicator" arc_rounded="false" arc_width="30" arc_color="0xfa0" opa="80" />
 	</styles>
 	<view style_bg_color="0x000">
 		<lv_arc
