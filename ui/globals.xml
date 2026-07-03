@@ -1,25 +1,42 @@
 <globals>
-    <api>
-        <!-- Add <enumdefs> here -->
-    </api>
+	<api>
+		<!-- Add <enumdefs> here -->
+	</api>
 
-    <consts>
-        <!-- Add <px>, <int>, <color> etc here -->
-    </consts>
+	<consts>
+		<!-- Add <px>, <int>, <color> etc here -->
+	</consts>
 
-    <styles>
-        <!-- Add <style> tags here -->
-    </styles>
+	<styles>
+		<!-- Add <style> tags here -->
+	</styles>
 
-    <subjects>
-        <!-- Add <int>, <string>, or <float> subjects here -->
-    </subjects>
+	<subjects>
+		<!-- Add <int>, <string>, or <float> subjects here -->
+	</subjects>
 
-    <images>
-        <!-- Add <file> or <data> tags here -->
-    </images>
+	<images>
+		<!-- Add <file> or <data> tags here -->
+	</images>
 
-    <fonts>
-        <!-- Add <bin> , <tiny_ttf>, <freetype> tags here -->
-    </fonts>
+	<fonts>
+		<!-- Add <bin> , <tiny_ttf>, <freetype> tags here -->
+		<bin
+			name="play_bold_32_c"
+			as_file="false"
+			bpp="1"
+			src_path="fonts/Play-Bold.ttf"
+			size="32"
+			symbols="1234567890 km/h.,-+="
+		/>
+		<bin
+			name="play_bold_48_c"
+			as_file="false"
+			bpp="1"
+			src_path="fonts/Play-Bold.ttf"
+			size="48"
+			range="0xB0"
+			symbols="1234567890 km/h.,-+="
+		/>
+	</fonts>
 </globals>

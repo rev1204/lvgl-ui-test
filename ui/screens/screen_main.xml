@@ -3,7 +3,7 @@
 		<style name="style_scale_indicator" line_color="0xf00" line_width="3" />
 		<style name="style_scale_items" line_color="0xfff" />
 		<style name="style_arc_knob" bg_opa="0" />
-		<style name="style_arc_indicator" arc_rounded="false" arc_width="30" arc_color="0xfa0" opa="80" />
+		<style name="style_arc_indicator" arc_rounded="false" arc_width="34" arc_color="0x0af" opa="80" />
 	</styles>
 	<view style_bg_color="0x000">
 		<lv_arc
@@ -41,8 +41,11 @@
 				<style name="style_scale_indicator" selector="indicator" />
 				<style name="style_scale_items" selector="items" />
 			</lv_scale>
-			<lv_label text="00" style_text_color="0xfff" align="top_mid" y="70" />
-			<lv_label text="km/h" style_text_color="0xfff" align="top_mid" y="100" />
+			<lv_label text="000" style_text_color="0xfff" align="top_mid" y="50" style_text_font="play_bold_48_c" />
+			<lv_label text="km/h" style_text_color="0xfff" align="top_mid" x="65" y="80" />
+			<lv_label text="000" style_text_color="0xfff" align="top_mid" y="106" style_text_font="play_bold_32_c" />
+			<lv_label text="deg" style_text_color="0xfff" align="top_mid" x="48" y="120" />
+			<lv_label text="Lon: 160.12345 Lat: -87.65478" style_text_color="0xfff" align="top_mid" y="146" />
 		</lv_arc>
 	</view>
 </screen>

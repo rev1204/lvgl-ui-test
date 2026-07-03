@@ -2,6 +2,8 @@ set(LV_EDITOR_PROJECT_SOURCES)
 list(
   APPEND
   LV_EDITOR_PROJECT_SOURCES
+  ${CMAKE_CURRENT_LIST_DIR}/fonts/play_bold_32_c_data.c
+  ${CMAKE_CURRENT_LIST_DIR}/fonts/play_bold_48_c_data.c
   ${CMAKE_CURRENT_LIST_DIR}/screens/screen_main_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/ui_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/ui.c)

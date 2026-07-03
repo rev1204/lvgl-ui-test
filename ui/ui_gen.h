@@ -55,6 +55,10 @@ extern "C" {
  * Fonts
  *----------------*/
 
+extern lv_font_t * play_bold_32_c;
+
+extern lv_font_t * play_bold_48_c;
+
 /*----------------
  * Images
  *----------------*/

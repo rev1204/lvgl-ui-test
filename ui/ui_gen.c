@@ -43,6 +43,11 @@
  * Fonts
  *----------------*/
 
+lv_font_t * play_bold_32_c;
+extern lv_font_t play_bold_32_c_data;
+lv_font_t * play_bold_48_c;
+extern lv_font_t play_bold_48_c_data;
+
 /*----------------
  * Images
  *----------------*/
@@ -72,6 +77,11 @@ void ui_init_gen(const char * asset_path)
      * Fonts
      *----------------*/
 
+    /* get font 'play_bold_32_c' from a C array */
+    play_bold_32_c = &play_bold_32_c_data;
+    /* get font 'play_bold_48_c' from a C array */
+    play_bold_48_c = &play_bold_48_c_data;
+
 
     /*----------------
      * Images
@@ -91,6 +101,8 @@ void ui_init_gen(const char * asset_path)
     /* Register widgets */
 
     /* Register fonts */
+    lv_xml_register_font(NULL, "play_bold_32_c", play_bold_32_c);
+    lv_xml_register_font(NULL, "play_bold_48_c", play_bold_48_c);
 
     /* Register subjects */
 

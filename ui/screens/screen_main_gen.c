@@ -54,7 +54,8 @@ lv_obj_t * screen_main_create(void)
 
         lv_style_init(&style_arc_indicator);
         lv_style_set_arc_rounded(&style_arc_indicator, false);
-        lv_style_set_arc_width(&style_arc_indicator, 30);
+        lv_style_set_arc_width(&style_arc_indicator, 34);
+        lv_style_set_arc_color(&style_arc_indicator, lv_color_hex3(0x0af));
         lv_style_set_opa(&style_arc_indicator, 80);
 
         style_inited = true;
@@ -98,16 +99,38 @@ lv_obj_t * screen_main_create(void)
     lv_obj_add_style(ui_scale_speed, &style_scale_items, LV_PART_ITEMS);
     
     lv_obj_t * lv_label_0 = lv_label_create(lv_arc_0);
-    lv_label_set_text(lv_label_0, "00");
+    lv_label_set_text(lv_label_0, "000");
     lv_obj_set_style_text_color(lv_label_0, lv_color_hex3(0xfff), 0);
     lv_obj_set_align(lv_label_0, LV_ALIGN_TOP_MID);
-    lv_obj_set_y(lv_label_0, 70);
+    lv_obj_set_y(lv_label_0, 50);
+    lv_obj_set_style_text_font(lv_label_0, play_bold_48_c, 0);
     
     lv_obj_t * lv_label_1 = lv_label_create(lv_arc_0);
     lv_label_set_text(lv_label_1, "km/h");
     lv_obj_set_style_text_color(lv_label_1, lv_color_hex3(0xfff), 0);
     lv_obj_set_align(lv_label_1, LV_ALIGN_TOP_MID);
-    lv_obj_set_y(lv_label_1, 100);
+    lv_obj_set_x(lv_label_1, 65);
+    lv_obj_set_y(lv_label_1, 80);
+    
+    lv_obj_t * lv_label_2 = lv_label_create(lv_arc_0);
+    lv_label_set_text(lv_label_2, "000");
+    lv_obj_set_style_text_color(lv_label_2, lv_color_hex3(0xfff), 0);
+    lv_obj_set_align(lv_label_2, LV_ALIGN_TOP_MID);
+    lv_obj_set_y(lv_label_2, 106);
+    lv_obj_set_style_text_font(lv_label_2, play_bold_32_c, 0);
+    
+    lv_obj_t * lv_label_3 = lv_label_create(lv_arc_0);
+    lv_label_set_text(lv_label_3, "deg");
+    lv_obj_set_style_text_color(lv_label_3, lv_color_hex3(0xfff), 0);
+    lv_obj_set_align(lv_label_3, LV_ALIGN_TOP_MID);
+    lv_obj_set_x(lv_label_3, 48);
+    lv_obj_set_y(lv_label_3, 120);
+    
+    lv_obj_t * lv_label_4 = lv_label_create(lv_arc_0);
+    lv_label_set_text(lv_label_4, "Lon: 160.12345 Lat: -87.65478");
+    lv_obj_set_style_text_color(lv_label_4, lv_color_hex3(0xfff), 0);
+    lv_obj_set_align(lv_label_4, LV_ALIGN_TOP_MID);
+    lv_obj_set_y(lv_label_4, 146);
 
     LV_TRACE_OBJ_CREATE("finished");
 
